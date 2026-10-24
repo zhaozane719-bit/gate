@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-     - name: Get VPN Gate nodes + check via Cloudflare Worker + build page
+      - name: Get VPN Gate nodes + check via Cloudflare Worker + build page
         run: python vpngate.py
         env:
           # 已部署的检测 Worker (不要改动: 检测统一走这里)
